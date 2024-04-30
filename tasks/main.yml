@@ -1,0 +1,13 @@
+---
+# repo: jomrr/ansible-role-hashicorp
+# file: tasks/main.yml
+
+- name: "Install Packages"
+  become: true
+  ansible.builtin.package:
+    name:
+      - gpg
+    state: present
+
+- name: "Include OS specific tasks"
+  ansible.builtin.include_tasks: "{{ ansible_os_family | lower }}.yml"

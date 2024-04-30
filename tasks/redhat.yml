@@ -1,0 +1,18 @@
+---
+# repo: jomrr/ansible-role-hashicorp
+# file: tasks/redhat.yml
+
+- name: "Add Hashicorp GPG key"
+  ansible.builtin.yum:
+    name: "https://rpm.releases.hashicorp.com/gpg"
+    state: present
+
+- name: "Add Hashicorp repository"
+  ansible.builtin.yum_repository:
+    name: "hashicorp"
+    description: "Hashicorp Stable"
+    baseurl: "https://rpm.releases.hashicorp.com/RHEL/$releasever/$basearch/stable"
+    gpgcheck: true
+    gpgkey: "https://rpm.releases.hashicorp.com/gpg"
+    enabled: true
+    state: present

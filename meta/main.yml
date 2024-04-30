@@ -1,0 +1,16 @@
+---
+# name: jomrr.hashicorp
+# file: meta/main.yml
+
+galaxy_info:
+  namespace: jomrr
+  role_name: hashicorp
+  author: Jonas Mauer
+  company: none
+  description: Ansible role to add the hashicorp repository for supported distributions.
+  license: MIT
+  issue_tracker_url: https://github.com/jomrr/ansible-role-hashicorp/issues
+  min_ansible_version: "2.15"
+  galaxy_tags:
+    - hashicorp
+    - repository

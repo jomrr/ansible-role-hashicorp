@@ -1,0 +1,14 @@
+---
+# repo: jomrr/ansible-role-hashicorp
+# file: tasks/debian.yml
+
+- name: "Add Hashicorp GPG key"
+  ansible.builtin.apt_key:
+    url: "https://apt.releases.hashicorp.com/gpg"
+    state: present
+
+- name: "Add Hashicorp repository"
+  ansible.builtin.apt_repository:
+    repo: "deb https://apt.releases.hashicorp.com {{ ansible_distribution_release }} main"
+    state: present
+    update_cache: true
