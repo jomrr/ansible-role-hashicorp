@@ -43,18 +43,6 @@ platforms:
     entrypoint: null
     command: null
     systemd: true
-  - name: opensuse-leap-latest-hashicorp
-    image: "docker.io/jomrr/molecule-opensuse-leap:latest"
-    pre_build_image: true
-    entrypoint: null
-    command: null
-    systemd: true
-  - name: opensuse-tumbleweed-latest-hashicorp
-    image: "docker.io/jomrr/molecule-opensuse-tumbleweed:latest"
-    pre_build_image: true
-    entrypoint: null
-    command: null
-    systemd: true
   - name: ubuntu-latest-hashicorp
     image: "docker.io/jomrr/molecule-ubuntu:latest"
     pre_build_image: true

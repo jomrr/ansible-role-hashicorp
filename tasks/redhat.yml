@@ -3,8 +3,8 @@
 # file: tasks/redhat.yml
 
 - name: "Add Hashicorp GPG key"
-  ansible.builtin.yum:
-    name: "https://rpm.releases.hashicorp.com/gpg"
+  ansible.builtin.rpm_key:
+    key: "https://rpm.releases.hashicorp.com/gpg"
     state: present
 
 - name: "Add Hashicorp repository"
@@ -16,3 +16,7 @@
     gpgkey: "https://rpm.releases.hashicorp.com/gpg"
     enabled: true
     state: present
+
+- name: "Refresh Yum cache"
+  ansible.builtin.yum:
+    update_cache: true

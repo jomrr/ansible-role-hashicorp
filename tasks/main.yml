@@ -2,11 +2,9 @@
 # repo: jomrr/ansible-role-hashicorp
 # file: tasks/main.yml
 
-- name: "Install Packages"
-  become: true
+- name: "Install gpg"
   ansible.builtin.package:
-    name:
-      - gpg
+    name: gpg
     state: present
 
 - name: "Include OS specific tasks"

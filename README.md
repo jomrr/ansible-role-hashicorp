@@ -36,8 +36,6 @@ roles: []
 | RedHat | AlmaLinux | latest | [jomrr/molecule-almalinux:latest]( https://hub.docker.com/r/jomrr/molecule-almalinux ) |
 | Debian | Debian | latest | [jomrr/molecule-debian:latest]( https://hub.docker.com/r/jomrr/molecule-debian ) |
 | RedHat | Fedora | latest | [jomrr/molecule-fedora:latest]( https://hub.docker.com/r/jomrr/molecule-fedora ) |
-| Suse | OpenSuse Leap | latest | [jomrr/molecule-opensuse-leap:latest]( https://hub.docker.com/r/jomrr/molecule-opensuse-leap ) |
-| Suse | OpenSuse Tumbleweed | latest | [jomrr/molecule-opensuse-tumbleweed:latest]( https://hub.docker.com/r/jomrr/molecule-opensuse-tumbleweed ) |
 | Debian | Ubuntu | latest | [jomrr/molecule-ubuntu:latest]( https://hub.docker.com/r/jomrr/molecule-ubuntu ) |
 
 ## Role Variables
