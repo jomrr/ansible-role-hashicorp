@@ -1,5 +1,5 @@
 ---
-# name: jomrr.ansible-role-hashicorp
+# role: jomrr.hashicorp
 # file: molecule/default/molecule.yml
 
 scenario:

@@ -1,8 +1,5 @@
 ---
-# name: jomrr.hashicorp
+# role: jomrr.hashicorp
 # file: meta/requirements.yml
 
-collections:
-  - community.general
-
-roles: []
+- name: community.general

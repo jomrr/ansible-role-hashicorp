@@ -17,6 +17,6 @@
     enabled: true
     state: present
 
-- name: "Refresh Yum cache"
-  ansible.builtin.yum:
+- name: "Refresh DNF cache"
+  ansible.builtin.dnf:
     update_cache: true
