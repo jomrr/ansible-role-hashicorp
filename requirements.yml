@@ -2,4 +2,7 @@
 # role: jomrr.hashicorp
 # file: meta/requirements.yml
 
-- name: community.general
+collections:
+  - community.general
+
+roles: []
